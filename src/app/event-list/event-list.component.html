@@ -1,0 +1,29 @@
+ <!-- event-list.component.html -->
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let event of events">
+      <div class="card mb-4">
+        <!-- Event Name -->
+        <div class="card-header">
+          <h5 class="card-title">{{ event.name }}</h5>
+        </div>
+
+        <!-- Event Description -->
+        <div class="card-body">
+          <p class="card-text">{{ event.description }}</p>
+        </div>
+
+        <!-- Event Date and Category -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Date: {{ event.date | date }}</li>
+          <li class="list-group-item">Category: {{ event.category }}</li>
+        </ul>
+
+        <!-- Created By (if needed) -->
+        <!-- <div class="card-footer">
+          Created By: {{ event.createdBy }}
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

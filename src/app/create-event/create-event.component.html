@@ -1,0 +1,23 @@
+<!-- src/app/create-event/create-event.component.html -->
+<div class="container mt-5">
+  <h2 class="text-center mt-5">Create Event</h2>
+  <form (submit)="createEvent()">
+    <div class="mb-3">
+      <label for="eventName" class="form-label">Event Name</label>
+      <input type="text" id="eventName" formControlName="eventName" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="eventDescription" class="form-label">Event Description</label>
+      <textarea id="eventDescription" formControlName="eventDescription" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="eventDate" class="form-label">Event Date</label>
+      <input type="date" id="eventDate" formControlName="eventDate" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="eventCategory" class="form-label">Event Category</label>
+      <input type="text" id="eventCategory" formControlName="eventCategory" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create Event</button>
+  </form>
+</div>
