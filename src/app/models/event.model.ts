@@ -1,10 +1,10 @@
 // src/app/models/event.model.ts
 
 export interface Event {
-  name: string;
-  description: string;
-  date: Date;
-  category: string;
+  eventName: string;
+  eventDescription: string;
+  eventDate: Date;
+  eventCategory: string;
   createdBy: string;
 }
 
